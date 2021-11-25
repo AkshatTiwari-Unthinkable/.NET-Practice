@@ -1,0 +1,26 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>AfterDelete</title>
+</head>
+<body>
+    <div>
+        @if (ViewBag.Flag==true)
+        {
+            <h3>Item Deleted</h3>
+        }
+        else
+        {
+            <h3>Item Not found</h3>
+        }
+    </div>
+    <a href="/Home/Index">Home</a>
+</body>
+</html>

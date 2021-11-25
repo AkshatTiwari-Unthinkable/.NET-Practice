@@ -1,0 +1,25 @@
+﻿
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ShowEmployee</title>
+</head>
+<body>
+    <div>
+        <h3>Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PhoneNumber&nbsp;&nbsp;&nbsp;&nbsp;Salary</h3>
+        @{ 
+                    using (StreamReader sr = File.OpenText(ViewBag.path))
+                    {
+                        string s = "";
+                        while ((s = sr.ReadLine()) != null)
+                        {  
+                            <h4>@s</h4>
+                        }
+                    }
+
+        }
+    </div>
+</body>
+</html>
